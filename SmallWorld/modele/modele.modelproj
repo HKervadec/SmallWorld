@@ -29,6 +29,34 @@
       <SubType>Content</SubType>
       <DependentUpon>toto.classdiagram</DependentUpon>
     </Content>
+    <Content Include="menu.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="menu.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>menu.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="partie.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="partie.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>partie.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagram1.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram1.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram1.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagram2.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram2.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram2.sequencediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\modele.uml">
       <SubType>Content</SubType>

@@ -5,7 +5,11 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class Nain : Unit
+    public class Dwarf : Unit
     {
+        public Dwarf()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

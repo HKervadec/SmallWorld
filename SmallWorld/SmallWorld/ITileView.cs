@@ -5,11 +5,7 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public enum TileType
+    public interface ITileView
     {
-        Field,
-        Moutain,
-        Forest,
-        Desert,
     }
 }

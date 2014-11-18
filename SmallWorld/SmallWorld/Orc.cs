@@ -7,5 +7,9 @@ namespace SmallWorld
 {
     public class Orc : Unit
     {
+        public Orc()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

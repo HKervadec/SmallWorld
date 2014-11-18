@@ -5,8 +5,30 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class Case
+    public class Tile
     {
+
+        public TileType type
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        public int textureId
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
 
         public Coord address
         {
@@ -19,7 +41,7 @@ namespace SmallWorld
             }
         }
 
-        public TypeCase type
+        public List<Unit> units
         {
             get
             {

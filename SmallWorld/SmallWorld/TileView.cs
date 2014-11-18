@@ -5,9 +5,9 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class GameCreator
+    public abstract class TileView
     {
-        public Oracle oracle
+        public int texture
         {
             get
             {

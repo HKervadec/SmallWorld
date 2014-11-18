@@ -5,11 +5,10 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public enum TileType
+    public enum MapSize
     {
-        Field,
-        Moutain,
-        Forest,
-        Desert,
+        SMALL,
+        NORMAL,
+        HUGE,
     }
 }

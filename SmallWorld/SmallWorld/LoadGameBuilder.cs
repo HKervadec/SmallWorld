@@ -5,11 +5,7 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public enum TileType
+    public class StrategyLoadGameBuilder : GameBuilderStrategy
     {
-        Field,
-        Moutain,
-        Forest,
-        Desert,
     }
 }

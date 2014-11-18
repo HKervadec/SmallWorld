@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="0cde9b29-08b6-4021-b6d8-ae2026bb8ef7" name="UMLClassDiagram1" linkedPackageId="92de9651-45c0-4da9-a7fd-c08c85146023" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="15444267-ebf2-41ac-a386-53b7e61a756d">
-      <profileInstance Id="530b1ccc-4089-4b90-9cc9-a1a4247a5b6b" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="8f38f04c-c5b5-42c8-bb73-e3ef2fa2a788">
-      <profileInstance Id="ac5d6107-2458-41d1-a854-25c744922ae8" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="e8fafc5b-1009-4c4b-9086-e306cabec5bb" name="Elfe" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -586,5 +572,19 @@
   </packagedElements>
   <package Id="92de9651-45c0-4da9-a7fd-c08c85146023" name="modele">
     <elementDefinition Id="861a3c30-1c16-4472-9161-022f21541780" />
+    <profileInstances>
+      <packageHasProfileInstances Id="15444267-ebf2-41ac-a386-53b7e61a756d">
+        <profileInstance Id="530b1ccc-4089-4b90-9cc9-a1a4247a5b6b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8f38f04c-c5b5-42c8-bb73-e3ef2fa2a788">
+        <profileInstance Id="ac5d6107-2458-41d1-a854-25c744922ae8" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

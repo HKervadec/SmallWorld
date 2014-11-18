@@ -5,11 +5,10 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public enum TileType
+    public enum Race
     {
-        Field,
-        Moutain,
-        Forest,
-        Desert,
+        Orcs,
+        Elfs,
+        Dwarfs,
     }
 }

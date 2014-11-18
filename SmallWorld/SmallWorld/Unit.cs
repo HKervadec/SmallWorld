@@ -7,27 +7,6 @@ namespace SmallWorld
 {
     public abstract class Unit
     {
-        public Boolean alive
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public Player owner
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
 
         public int life
         {
@@ -40,7 +19,7 @@ namespace SmallWorld
             }
         }
 
-        public int mov
+        public int movementPoints
         {
             get
             {
@@ -62,6 +41,17 @@ namespace SmallWorld
             }
         }
 
+        public UnitState state
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
         public void hurt(int dmg)
         {
             throw new System.NotImplementedException();
@@ -73,6 +63,16 @@ namespace SmallWorld
         }
 
         public void resetMov()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void defend()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void move(Coord dest)
         {
             throw new System.NotImplementedException();
         }

@@ -5,15 +5,9 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class Player
+    public class Game
     {
-    
-        public Player(int c, int peuple)
-        {
-            throw new System.NotImplementedException();
-        }
-    
-        public int color
+        public List<Player> players
         {
             get
             {
@@ -24,7 +18,7 @@ namespace SmallWorld
             }
         }
 
-        public int img
+        public int currentPlayer
         {
             get
             {
@@ -35,7 +29,7 @@ namespace SmallWorld
             }
         }
 
-        public Unit[] army
+        public int currentTurn
         {
             get
             {
@@ -46,7 +40,7 @@ namespace SmallWorld
             }
         }
 
-        public String name
+        public Map Map
         {
             get
             {
@@ -57,23 +51,17 @@ namespace SmallWorld
             }
         }
 
-        public Race race
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public void generateImg()
+        public void save()
         {
             throw new System.NotImplementedException();
         }
 
-        public void createArmy()
+        public void nextPlayer()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void bagarre(Unit attacker, Unit defender)
         {
             throw new System.NotImplementedException();
         }

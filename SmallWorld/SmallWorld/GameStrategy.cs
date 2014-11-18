@@ -5,9 +5,9 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class Elf : Unit
+    public abstract class GameStrategy
     {
-        public Elf()
+        public void buildMap()
         {
             throw new System.NotImplementedException();
         }
