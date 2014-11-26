@@ -12,6 +12,10 @@ namespace SmallWorld
             this.x = x;
             this.y = y;
         }
+
+        public Coord() : this(0, 0)
+        {
+        }
     
         public int x
         {
