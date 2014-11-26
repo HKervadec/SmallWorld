@@ -7,6 +7,10 @@ namespace SmallWorld
 {
     public class GameManager
     {
+        private List<String> players_name;
+        private List<Race> players_race;
+        private MapSize ms;
+
         public GameManager()
         {
             throw new System.NotImplementedException();
@@ -16,16 +20,17 @@ namespace SmallWorld
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.currentGame;
             }
             set
             {
+                this.currentGame = value;
             }
         }
 
         public void launchGame()
         {
-            throw new System.NotImplementedException();
+            this.currentGame = StrategyNewGameBuilder.buildGame(ms, players_name.ToArray(), players_race.ToArray());
         }
 
         public void loadGame()

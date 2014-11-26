@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class StrategySmall : GameStrategy
+    public class Strategy : GameStrategy
     {
     }
 

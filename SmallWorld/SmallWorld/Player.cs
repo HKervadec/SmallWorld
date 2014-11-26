@@ -8,16 +8,20 @@ namespace SmallWorld
     public class Player
     {
     
-        public Player(int c, int peuple)
+        public Player(String name, Race r, int c, int max_unit)
         {
-            throw new System.NotImplementedException();
+            this.color = c;
+            this.race = r;
+            this.name = name;
+
+            this.createArmy(max_unit);
         }
     
         public int color
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.color;
             }
             set
             {
@@ -35,11 +39,11 @@ namespace SmallWorld
             }
         }
 
-        public Unit[] army
+        public List<Unit> army
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.army;
             }
             set
             {
@@ -50,7 +54,7 @@ namespace SmallWorld
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.name;
             }
             set
             {
@@ -61,7 +65,7 @@ namespace SmallWorld
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.race;
             }
             set
             {
@@ -73,9 +77,12 @@ namespace SmallWorld
             throw new System.NotImplementedException();
         }
 
-        public void createArmy()
+        public void createArmy(int max_unit)
         {
-            throw new System.NotImplementedException();
+            for (int i = 0; i < max_unit; i++)
+            {
+                this.army.Add(UnitFactory.createUnit(this.race, new Coord(-1,-1)));
+            }
         }
     }
 }

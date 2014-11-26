@@ -7,22 +7,30 @@ namespace SmallWorld
 {
     public class Game
     {
-        public List<Player> players
+        public Game(Player[] players, Map map)
+        {
+            this.players = players;
+            this.Map = map;
+            this.currentTurn = 0;
+            this.currentPlayerId = 0;
+        }
+    
+        public Player[] players
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.players;
             }
             set
             {
             }
         }
 
-        public int currentPlayer
+        public int currentPlayerId
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.currentPlayerId;
             }
             set
             {
@@ -33,7 +41,7 @@ namespace SmallWorld
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.currentTurn;
             }
             set
             {
@@ -44,7 +52,7 @@ namespace SmallWorld
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.Map;
             }
             set
             {
@@ -58,7 +66,7 @@ namespace SmallWorld
 
         public void nextPlayer()
         {
-            throw new System.NotImplementedException();
+            this.currentPlayerId = (this.currentPlayerId + 1) % this.players.Length;
         }
 
         public void bagarre(Unit attacker, Unit defender)

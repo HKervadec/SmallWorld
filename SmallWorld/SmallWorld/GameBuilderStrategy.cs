@@ -7,22 +7,22 @@ namespace SmallWorld
 {
     public abstract class GameBuilderStrategy
     {
-        public Game buildGame(MapSize ms, List<String> playersName)
+        public static Game buildGame(MapSize ms, String[] playersName, Race[] playersRace)
         {
             throw new System.NotImplementedException();
         }
 
-        public Game buildGame(int slotId)
+        public static Game buildGame(int slotId)
         {
             throw new System.NotImplementedException();
         }
 
-        public void buildMap(MapSize ms)
+        public static Map buildMap(MapSize ms)
         {
             throw new System.NotImplementedException();
         }
 
-        public void createPlayer(String playerName)
+        public static void createPlayer(String playerName)
         {
             throw new System.NotImplementedException();
         }

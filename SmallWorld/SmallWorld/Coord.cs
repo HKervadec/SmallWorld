@@ -7,11 +7,17 @@ namespace SmallWorld
 {
     public class Coord
     {
+        public Coord(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+    
         public int x
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.x;
             }
             set
             {
@@ -22,11 +28,16 @@ namespace SmallWorld
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.y;
             }
             set
             {
             }
+        }
+
+        public Boolean NextTo(Coord b)
+        {
+            return Math.Abs(this.x - b.x) + Math.Abs(this.y - b.y) == 2;
         }
     }
 }

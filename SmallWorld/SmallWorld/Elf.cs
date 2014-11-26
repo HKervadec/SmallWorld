@@ -5,16 +5,17 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class Orc : Unit
+    public class Elf : Unit
     {
-        public Orc(Coord pos)
+        public Elf(Coord pos) 
             : base(pos)
         {
 
         }
-        new public static int movement_cost(Tile dest)
+
+        new static int movement_cost(Tile dest)
         {
-            if (dest.type != TileType.Desert)
+            if (dest.type != TileType.Forest)
             {
                 return Unit.default_mov_cost;
             }

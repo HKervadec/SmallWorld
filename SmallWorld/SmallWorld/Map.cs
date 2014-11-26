@@ -7,18 +7,31 @@ namespace SmallWorld
 {
     public class Map
     {
-        public Case[][] world
+        public Tile[][] world
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.world;
             }
             set
             {
             }
         }
 
-        public TypeCase getType(Coord address)
+        public Tile getTile(int x, int y)
+        {
+            return this.world[x][y / 2];
+        }
+
+        public void setTile(Tile t)
+        {
+            int x = t.address.x;
+            int y = t.address.y;
+
+            this.world[x][y / 2] = t;
+        }
+
+        public TileType getType(Coord address)
         {
             throw new System.NotImplementedException();
         }
