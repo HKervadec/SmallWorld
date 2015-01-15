@@ -7,19 +7,26 @@ namespace SmallWorld
 {
     public class Dwarf : Unit
     {
-        public Dwarf(Coord pos) :
-            base(pos)
+        public Dwarf(Coord pos, int id) :
+            base(pos, id)
         {
+            favorite_type = TileType.Moutain;
         }
 
-        new public static int movement_cost(Tile dest)
-        {
-            if (dest.type != TileType.Moutain)
-            {
-                return Unit.default_mov_cost;
+        public override bool Move(Tile dest, Map map) {
+            if(!base.Move(dest, map)) {
+                if(map.getType(Pos) == TileType.Moutain &&
+                    dest.Type == TileType.Moutain) {
+                    this.pos = dest.Address;
+                    this.movementPoints = 0;
+
+                    return true;
+                }
+
+                return false;
             }
 
-            return Unit.default_mov_cost / 2;
+            return true;
         }
     }
 }

@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="SmallWorldWPF.UnitCell"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="50" Foreground="{x:Null}">
+    <Grid>
+        <Button Name="button" Command="{Binding Path=DisplayProductCommand}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="0" 
+                 Click="clic">
+            <Button.Resources>
+                <ImageBrush x:Key="dwarf" ImageSource="Resources/Game/dwarf.png"/>
+                <ImageBrush x:Key="orc" ImageSource="Resources/Game/orc.png"/>
+                <ImageBrush x:Key="elf" ImageSource="Resources/Game/elf.png"/>
+                <ImageBrush x:Key="blank" ImageSource="Resources/Game/blank.png"/>
+            </Button.Resources>
+            <Path Name="path" Width="50" Height ="50"></Path>
+        </Button>
+    </Grid>
+</UserControl>

@@ -1,0 +1,34 @@
+﻿<Page x:Class="SmallWorldWPF.NewGame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="1000" d:DesignWidth="1600"
+	Title="NewGame">
+
+    <Grid>
+        <Image Margin="0,0,10,0" Stretch="Fill" Source="Resources/Menu/menuBackground.png"/>
+        <Button Content="Launch !" HorizontalAlignment="Center" Margin="0,0,0,20" VerticalAlignment="Bottom" Width="126" FontSize="36" FontFamily="Tw Cen MT" Height="52"
+              Click="Launch_Game"/>
+        <TextBox Name="P1Name" HorizontalAlignment="Left" Height="38" Margin="294,273,0,0" TextWrapping="Wrap" Text="Player 1" VerticalAlignment="Top" Width="180" FontFamily="Tw Cen MT" FontSize="24"/>
+        <TextBox Name="P2Name" HorizontalAlignment="Right" Height="38" Margin="0,273,294,0" TextWrapping="Wrap" Text="Player 2" VerticalAlignment="Top" Width="180" FontFamily="Trebuchet MS" FontSize="24"/>
+        <ListBox Name="P1Race" HorizontalAlignment="Left" Height="81" Margin="294,390,0,0" VerticalAlignment="Top" Width="120" FontFamily="Tw Cen MT" FontSize="20">
+            <ListBoxItem Content="Dwarf"/>
+            <ListBoxItem Content="Elf"/>
+            <ListBoxItem Content="Orc"/>
+        </ListBox>
+        <ListBox Name="P2Race" HorizontalAlignment="Right" Height="81" Margin="0,390,294,0" VerticalAlignment="Top" Width="120" FontFamily="Tw Cen MT" FontSize="20">
+            <ListBoxItem Content="Dwarf"/>
+            <ListBoxItem Content="Elf"/>
+            <ListBoxItem Content="Orc"/>
+        </ListBox>
+        <ListBox Name="SizeBox" HorizontalAlignment="Center" Height="82" Margin="0,0,0,150" VerticalAlignment="Bottom" Width="87" FontFamily="Tw Cen MT" FontSize="20">
+            <ListBoxItem Content="Demo"/>
+            <ListBoxItem Content="Normal"/>
+            <ListBoxItem Content="Huge"/>
+        </ListBox>
+
+
+    </Grid>
+</Page>

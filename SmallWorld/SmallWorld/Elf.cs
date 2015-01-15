@@ -7,20 +7,10 @@ namespace SmallWorld
 {
     public class Elf : Unit
     {
-        public Elf(Coord pos) 
-            : base(pos)
+        public Elf(Coord pos, int id) 
+            : base(pos, id)
         {
-
-        }
-
-        new static int movement_cost(Tile dest)
-        {
-            if (dest.type != TileType.Forest)
-            {
-                return Unit.default_mov_cost;
-            }
-
-            return Unit.default_mov_cost / 2;
+            favorite_type = TileType.Forest;
         }
     }
 }

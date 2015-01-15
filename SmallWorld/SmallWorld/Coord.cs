@@ -7,17 +7,24 @@ namespace SmallWorld
 {
     public class Coord
     {
+        private int x;
+        private int y;
+
         public Coord(int x, int y)
         {
             this.x = x;
             this.y = y;
         }
 
+        public Coord clone() {
+            return new Coord(this.x, this.y);
+        }
+
         public Coord() : this(0, 0)
         {
         }
     
-        public int x
+        public int X
         {
             get
             {
@@ -25,10 +32,11 @@ namespace SmallWorld
             }
             set
             {
+                this.x = value;
             }
         }
 
-        public int y
+        public int Y
         {
             get
             {
@@ -36,12 +44,13 @@ namespace SmallWorld
             }
             set
             {
+                this.y = value;
             }
         }
 
         public Boolean NextTo(Coord b)
         {
-            return Math.Abs(this.x - b.x) + Math.Abs(this.y - b.y) == 2;
+            return Math.Abs(this.X - b.X) + Math.Abs(this.Y - b.Y) == 2;
         }
     }
 }

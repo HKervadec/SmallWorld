@@ -7,19 +7,10 @@ namespace SmallWorld
 {
     public class Orc : Unit
     {
-        public Orc(Coord pos)
-            : base(pos)
+        public Orc(Coord pos, int id)
+            : base(pos, id)
         {
-
-        }
-        new public static int movement_cost(Tile dest)
-        {
-            if (dest.type != TileType.Desert)
-            {
-                return Unit.default_mov_cost;
-            }
-
-            return Unit.default_mov_cost / 2;
+            favorite_type = TileType.Desert;
         }
     }
 }

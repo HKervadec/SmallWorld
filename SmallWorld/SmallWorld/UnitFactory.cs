@@ -7,31 +7,31 @@ namespace SmallWorld
 {
     public class UnitFactory
     {
-        public static Unit createUnit(Race race, Coord pos)
+        public static Unit createUnit(Race race, Coord pos, int id)
         {
             switch (race)
             {
                 case Race.Dwarfs:
-                    return createDwarf(pos);
+                    return createDwarf(pos, id);
                 case Race.Elfs:
-                    return createElf(pos);
+                    return createElf(pos, id);
                 case Race.Orcs:
-                    return createElf(pos);
+                    return createOrc(pos, id);
             }
 
             throw new System.Exception("Unknown race: " + race);
         }
-        public static Dwarf createDwarf(Coord pos)
+        public static Dwarf createDwarf(Coord pos, int id)
         {
-            return new Dwarf(pos);
+            return new Dwarf(pos, id);
         }
-        public static  Orc createOrc(Coord pos)
+        public static Orc createOrc(Coord pos, int id)
         {
-            return new Orc(pos);
+            return new Orc(pos, id);
         }
-        public static Elf createElf(Coord pos)
+        public static Elf createElf(Coord pos, int id)
         {
-            return new Elf(pos);
+            return new Elf(pos, id);
         }
     }
 }

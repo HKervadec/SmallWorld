@@ -7,48 +7,63 @@ namespace SmallWorld
 {
     public class Tile
     {
+        private TileType type;
+        private Coord address;
+        private int textureId;
+        private Unit currentUnit;
 
-        public TileType type
+        public Tile(TileType t, Coord address, int tid) {
+            this.type = t;
+            this.address = address.clone();
+            this.textureId = tid;
+
+            this.currentUnit = null;
+        }
+
+
+        public TileType Type
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.type;
+            }
+            set
+            {
+                this.type = value;
+            }
+        }
+
+        public int TextureId
+        {
+            get
+            {
+                return this.textureId;
             }
             set
             {
             }
         }
 
-        public int textureId
+        public Coord Address
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.address;
             }
             set
             {
             }
         }
 
-        public Coord address
+        public Unit CurrentUnit
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this.currentUnit;
             }
             set
             {
-            }
-        }
-
-        public List<Unit> units
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
+                this.currentUnit = value;
             }
         }
     }

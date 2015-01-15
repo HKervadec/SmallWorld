@@ -7,24 +7,34 @@ namespace SmallWorld
 {
     public class StrategyNewGameBuilder : GameBuilderStrategy
     {
-        new public static Game buildGame(MapSize ms, String[] playersName, Race[] playersRace)
+        public static Game buildGame(MapSize ms, List<String> playersName, List<Race> playersRace)
         {
-            if (playersName.Length != playersRace.Length)
+            if(playersName.Count() != playersRace.Count())
             {
                 throw new System.Exception("Players size does not match races size");
             }
 
+            int n = playersName.Count();
+            Player[] players = new Player[n];
 
-            Player[] players = new Player[playersName.Length];
-            int army_size = GetArmySize(ms);
+            Map map = new Map(ms);
 
-            for (int i = 0; i < playersName.Length; i++)
-            {
-                players[i] = new Player(playersName[i], playersRace[i], i, army_size);
+            for(int i = 0 ; i < n ; i++) {
+                players[i] = new Player(playersName[i],
+                    playersRace[i],
+                    ms,
+                    map.getPlayerInitPos(),
+                    i);
+
+                foreach(Unit u in players[i].Army) {
+                    Coord test = u.Pos;
+                    int x = u.Pos.X;
+                    int y = u.Pos.Y;
+
+                    map.getTile(x, y).CurrentUnit = u;
+                }
             }
 
-
-            Map map = buildMap(ms);
 
             return new Game(players, map);
         }

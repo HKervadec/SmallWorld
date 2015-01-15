@@ -7,28 +7,39 @@ namespace SmallWorld
 {
     public class Player
     {
-    
-        public Player(String name, Race r, int c, int max_unit)
+
+        private int img;
+        private List<Unit> army;
+        private String name;
+        private Race race;
+        public int id;
+        private int score;
+
+        public Player(String name, Race r, MapSize ms, Coord initPos, int id)
         {
-            this.color = c;
             this.race = r;
             this.name = name;
+            this.id = id;
+            this.score = 0;
 
-            this.createArmy(max_unit);
+            this.createArmy(this.armyInitialSize(ms), initPos);
+        }
+
+        private int armyInitialSize(MapSize ms) {
+            switch(ms) {
+                case MapSize.SMALL:
+                    return 2;
+                case MapSize.NORMAL:
+                    return 4;
+                case MapSize.HUGE:
+                    return 6;
+            }
+
+            return 0;
         }
     
-        public int color
-        {
-            get
-            {
-                return this.color;
-            }
-            set
-            {
-            }
-        }
 
-        public int img
+        public int Img
         {
             get
             {
@@ -39,7 +50,7 @@ namespace SmallWorld
             }
         }
 
-        public List<Unit> army
+        public List<Unit> Army
         {
             get
             {
@@ -50,7 +61,7 @@ namespace SmallWorld
             }
         }
 
-        public String name
+        public String Name
         {
             get
             {
@@ -61,7 +72,7 @@ namespace SmallWorld
             }
         }
 
-        public Race race
+        public Race Race
         {
             get
             {
@@ -72,17 +83,39 @@ namespace SmallWorld
             }
         }
 
+        public int Score {
+            get {
+                return this.score;
+            }
+            set {
+                this.score = value;
+            }
+        }
+
         public void generateImg()
         {
             throw new System.NotImplementedException();
         }
 
-        public void createArmy(int max_unit)
+        public void createArmy(int max_unit, Coord initPos)
         {
-            for (int i = 0; i < max_unit; i++)
-            {
-                this.army.Add(UnitFactory.createUnit(this.race, new Coord(-1,-1)));
-            }
+            this.army = new List<Unit>();
+
+            this.army.Add(UnitFactory.createUnit(this.race, new Coord(initPos.X - 2, initPos.Y), id));
+            this.army.Add(UnitFactory.createUnit(this.race, new Coord(initPos.X + 2, initPos.Y), id));
+            if(this.army.Count() >= max_unit) { return;}
+
+            this.army.Add(UnitFactory.createUnit(this.race, new Coord(initPos.X - 1, initPos.Y - 1), id));
+            this.army.Add(UnitFactory.createUnit(this.race, new Coord(initPos.X + 1, initPos.Y - 1), id));
+            if(this.army.Count() >= max_unit) { return; }
+
+            this.army.Add(UnitFactory.createUnit(this.race, new Coord(initPos.X - 1, initPos.Y + 1), id));
+            this.army.Add(UnitFactory.createUnit(this.race, new Coord(initPos.X + 1, initPos.Y + 1), id));
+            if(this.army.Count() >= max_unit) { return; }
+        }
+
+        public void killUnit(Unit u) {
+            this.Army.Remove(u);
         }
     }
 }

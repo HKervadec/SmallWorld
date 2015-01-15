@@ -3,67 +3,67 @@
   <Class Name="SmallWorld.Unit">
     <Position X="20" Y="13.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQABAAAAAAAAAADAAAAAAIBgAAAACAAEAADAACAAAAA=</HashCode>
+      <HashCode>IQABAAAAAcAAAAAAAAAAAIBgAAiACAAEAAAABCAAwAA=</HashCode>
       <FileName>Unit.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="pos" />
-      <Property Name="state" />
+      <Field Name="pos" />
+      <Field Name="state" />
     </ShowAsAssociation>
   </Class>
   <Class Name="SmallWorld.Player">
     <Position X="8.5" Y="14.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAEAAEAAAUAAAAAAAAAAAAAAEAACAAAAAAAAAAAA=</HashCode>
+      <HashCode>QAABAEAQEAAAUAAAAAAAAAQAAAAEAACAAAAAgAAAAQA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="race" />
+      <Field Name="race" />
     </ShowAsAssociation>
   </Class>
   <Class Name="SmallWorld.Coord">
     <Position X="17.75" Y="13.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAABgAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAABgEAAAYAA=</HashCode>
       <FileName>Coord.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SmallWorld.Dwarf">
     <Position X="17.75" Y="17" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Dwarf.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SmallWorld.Elf">
     <Position X="20" Y="17" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Elf.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SmallWorld.Orc">
     <Position X="22.25" Y="17" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Orc.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SmallWorld.Tile">
     <Position X="15.25" Y="13.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIRABAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAIRABACEQAAAAAAAAA=</HashCode>
       <FileName>Tile.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="type" />
-      <Property Name="address" />
+      <Field Name="type" />
+      <Field Name="address" />
     </ShowAsAssociation>
   </Class>
   <Class Name="SmallWorld.Map">
     <Position X="13" Y="15.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAEQAAA=</HashCode>
+      <HashCode>AAAAEAAAABAAgAAAAIAAAAAAAQAAAAAAAAAAAAEQAAA=</HashCode>
       <FileName>Map.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -152,7 +152,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="SmallWorld.StrategyLoadGameBuilder">
-    <Position X="20.75" Y="9" Width="1.5" />
+    <Position X="20.75" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StrategyLoadGameBuilder.cs</FileName>
@@ -168,17 +168,17 @@
   <Class Name="SmallWorld.GameManager">
     <Position X="10.75" Y="12" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAQEAAAAAABAAAAAAAAgAAAAAIAAAAEQAAAAAAAA=</HashCode>
+      <HashCode>AQAAAQEAAAAAABAAAAAAAAgAAAAAIAAAAEQAAAAAAAA=</HashCode>
       <FileName>GameManager.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="currentGame" />
+      <Field Name="currentGame" />
     </ShowAsAssociation>
   </Class>
   <Class Name="SmallWorld.Game">
     <Position X="10.75" Y="14.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAhCAAAACCAAAAAAAAAAAAAAAMAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAEAAAAhCAAAACCAAAAAgAAAAwAAAAMAAAAAAAAAA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>

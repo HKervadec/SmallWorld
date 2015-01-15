@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="CoordTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTest.cs" />
     <Compile Include="WrapperTest.cs" />
   </ItemGroup>
   <ItemGroup>
